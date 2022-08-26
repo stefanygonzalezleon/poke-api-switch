@@ -1,7 +1,7 @@
 # pokeApi-game
 Switch console with PokeApi  actions
 
-![preview](img/preview.PNG)
+![preview](img/preview.png)
 
 ## Usage
 
