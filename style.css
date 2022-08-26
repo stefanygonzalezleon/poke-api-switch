@@ -1,0 +1,406 @@
+
+
+.progress-bar {
+    position: absolute;
+    width: 144px;
+    height: 1em;
+    background-color: #111;
+    border-radius: 1.5em;
+    color: white;
+    max-width: calc(100% - 1em);
+    margin-top: 208px;
+    margin-left: 320px;
+
+}
+
+.progress-bar::before {
+	content: attr(data-label);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: calc(var(--width, 0) * 1%);
+    max-width: calc(100% - 1em);
+    height: -15px;
+    background-color: #68dca2;
+    border-radius: 1em;
+    padding-left: 11px;
+    color: white;
+    font-weight: 600;
+}
+
+body {
+    background-color: rgb(236 240 207);
+    max-width: 500px;
+    ;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier', monospace;
+    font-size: 16px;
+}
+
+.img-container {
+    position: absolute;
+    top: 37%;
+    left: 13%;
+    width: 212px;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite
+
+}
+
+.poke-img {
+    width: 74%;
+ 
+
+}
+@keyframes example {
+    0%   {top:37%;}
+    25%  {top:39%;}
+    50%  {top:37%;}
+    75%  { top:39%;}
+    100% {top:37%;}
+  
+}
+
+.oponente img {
+    width: 36%;
+    height: 20%;
+
+}
+
+.poke-card {
+    position: absolute;
+    width: 824px;
+    height: 393px;
+    background: none;
+    top: 116px;
+ 
+}
+
+.joy-con-left {
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    background: #d6d12d;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.ellipse-button {
+    position: absolute;
+    height: 3%;
+    width: 30%;
+    top: 8%;
+    right: 5%;
+    background: black;
+    border-radius: 50px;
+}
+
+.analog-left {
+    position: absolute;
+    border-radius: 50%;
+    background: black;
+    height: 13%;
+    width: 40%;
+    top: 20%;
+    left: 25%;
+    border: solid 5px #202226;
+}
+
+.d-pad-container-left {
+    position: absolute;
+    height: 23%;
+    width: 70%;
+    left: 15%;
+    background: none;
+    top: 45%;
+}
+
+.square-button {
+    position: absolute;
+    bottom: 15%;
+    right: 13%;
+    height: 7%;
+    width: 23%;
+    background: black;
+}
+
+.d-pad-top {
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    left: 35%;
+    top: 0%;
+    background: black;
+    border-radius: 50%;
+}
+
+.d-pad-bottom {
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    left: 35%;
+    bottom: 0%;
+    background: black;
+    border-radius: 50%;
+}
+
+.d-pad-left {
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    left: 0%;
+    top: 35%;
+    background: black;
+    border-radius: 50%;
+}
+
+.d-pad-right {
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    right: 0%;
+    top: 35%;
+    background: black;
+    border-radius: 50%;
+}
+
+.joy-con-right {
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    right: 0%;
+    background: #737A80;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.analog-right {
+    position: absolute;
+    border-radius: 50%;
+    background: black;
+    height: 13%;
+    width: 40%;
+    top: 50%;
+    left: 25%;
+    border: solid 5px #202226;
+}
+
+.d-pad-2-container {
+    position: absolute;
+    background: none;
+    height: 8%;
+    width: 25%;
+    top: 3%;
+    left: 8%;
+}
+
+.d-pad-2-vertical {
+    position: absolute;
+    height: 100%;
+    background: black;
+    width: 35%;
+    left: 32.5%;
+}
+
+.d-pad-2-horizontal {
+    position: absolute;
+    width: 100%;
+    background: black;
+    height: 35%;
+    top: 32.5%;
+}
+
+.d-pad-container-right {
+    position: absolute;
+    height: 23%;
+    width: 70%;
+    left: 15%;
+    background: none;
+    top: 20%;
+}
+
+.circle-button-right {
+    position: absolute;
+    border-radius: 50%;
+    background: black;
+    height: 3%;
+    width: 10%;
+    bottom: 18%;
+    left: 10%;
+    border: solid 5px #202226;
+}
+
+
+.screen_edge {
+    position: absolute;
+    background: none;
+    width: 70%;
+    left: 15%;
+    background: black;
+    height: 100%;
+
+}
+
+.screen {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    height: 90%;
+}
+
+.scenary {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.poke-name {
+    width: 62px;
+    top: 48%;
+    position: absolute;
+    left: 58%;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: revert;
+    background: #f2efd0;
+}
+
+.oponente {
+    top: 0%;
+    left: 53%;
+    position: absolute;
+}
+
+.logo {
+    width: 400px;
+    position: absolute;
+    top: 24px;
+}
+
+.text-container {
+    position: absolute;
+    top: 72%;
+    left: 3%;
+    width: 94%;
+    height: 25%;
+    background-color: white;
+
+}
+
+.formToggle {
+    font-family: revert;
+    font-weight: 700;
+    width: 300px;
+    padding: 17px;
+}
+
+form {
+    display: block;
+    background-color: aquamarine;
+    border: 1px solid darkred;
+    border-bottom: double;
+    border-left: double;
+    border-radius: 5px;
+    padding: 10px;
+    padding: 10px;
+    width: 184px;
+    margin-top: -82px;
+    margin-left: 239px;
+  
+}
+
+button {
+    font-size: medium;
+    border-style: none;
+    background-color: #1f619145;
+    border-radius: 17%;
+    margin-top: -60px;
+}
+#search{
+    width: 181px;
+
+}
+
+.informationSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 467px;
+    margin-top: -12px;
+    font-size: small;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    margin-top: -9px;
+    font-size: smaller;
+
+}
+
+#stats {
+    position: absolute;
+    color: #313674;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #fbff9c;
+    border: 2px solid #917d7d;
+    padding: 5px;
+    top: -208%;
+    left: 28%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 16px;
+}
+
+.moves-main{
+    height: 100px;
+    overflow: hidden;
+    width: 300px;
+    position: absolute;
+    background-color: rgb(255 255 255);
+    border: 2px solid #917d7d;
+    padding: 5px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 16px;
+
+}
+
+#moves {
+    display: inline-flex;
+  -moz-animation: slider 60s infinite linear;
+  -webkit-animation: slider 60s infinite linear;
+  animation: slider 60s infinite linear;
+  height: 100%;
+  width: auto;
+}
+
+#moves div {
+    color: #2f3470;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 100px;
+    text-align: center;
+    width: 150px;
+    background-color: #fbff9c;
+    border: solid 1px #357b9d;
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+@keyframes slider {
+    to {
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }

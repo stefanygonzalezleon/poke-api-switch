@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="text: hp bar" content="70" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+    <title>pokeApi</title>
+</head>
+<body>
+
+        
+        <div data-poke-card class="poke-card">
+            <div class="joy-con-left">
+                <div class="ellipse-button"></div>
+                <div class="analog-left"></div>
+                <div class="d-pad-container-left">
+                  <div class="d-pad-top"></div>
+                  <div class="d-pad-left"></div>
+                  <div class="d-pad-right"></div>
+                  <div class="d-pad-bottom"></div>
+                </div>
+                <div class="square-button"></div>
+            </div>
+            <div class="joy-con-right">
+                <div class="analog-right"></div>
+                <div class="circle-button-right"></div>
+                <div class="d-pad-container-right">
+                  <div class="d-pad-top"></div>
+                  <div class="d-pad-left"></div>
+                  <div class="d-pad-right"></div>
+                  <div class="d-pad-bottom"></div>
+                </div>
+                <div class="d-pad-2-container">
+                  <div class="d-pad-2-vertical"></div>
+                  <div class="d-pad-2-horizontal"></div>
+                </div>
+              </div>
+            <div class="screen_edge">
+                <div class="screen">
+                    <img src="img/background.png" alt="" class="scenary">
+                    <div data-poke-name class="poke-name"></div>
+                    <div data-poke-img-container class="img-container" >
+                        <img data-poke-img src="img/ash.png" class="poke-img">
+                    </div>
+                    <div class="oponente">
+                        <img src="img/contricante.gif" alt="" class="trainer-pokemon">
+                        <img src="img/pokemontrainer.gif" alt="" class="pokemon-trainer">
+                    </div>
+
+                    <div class="text-container">
+                        <div class="formToggle" id="form-Toggle">
+                            <div id="form-section" style="display: block;">
+                            <p>Estas siendo retado por stefany....<a onclick="toggle(this)"> POKEMON:..</a></p>  
+                            <form action="" onSubmit="buscarPokemon(event)" style="display:none;" id="form">
+                                <label for="gsearch">elije otro pokemon:</label>
+                                <input type="search" id="search" name="pokemon" required>
+                                <input type="submit">
+                            </form>
+                             </div>
+                             <div class="informationSection" id="informationSection" style="visibility: hidden;">
+                                <div class="right">
+                                    <div> <p onclick="toggleStats(this)">STATS</p><div data-poke-stats class="poke-stats" id="stats" style="visibility: hidden;"></div></div>
+                                    <div> <p onclick="toggleMoves(this)">MOVES</p><div class="moves-main" id="movesMain" style = "visibility: hidden;" ><div data-poke-moves class="poke-moves " id="moves"></div></div></div>
+
+                                </div>
+                                    <div class="left">
+                                        <div> <p>HEIGHT</p><div data-poke-height class="poke-height"></div></div>
+                                        <div> <p>WEIGHT</p><div data-poke-weight class="poke-weight"></div></div>
+                                        <div style="margin-left: 69px;margin-top: -92px;"> <p>TYPES</p><div data-poke-types class="poke-types"></div></div>
+                                    </div>
+                                    
+                                </div> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+                    <progress id="health" value="50" max="100" style="visibility:hidden ;"></progress>
+         
+        </div>
+            </div>
+        </div>
+        <img src="img/pokemon.png" alt="" class="logo">
+    <script src="action.js"></script>
+</body>
+</html>
